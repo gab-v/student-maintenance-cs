@@ -1,0 +1,66 @@
+﻿<Page x:Class="CPE106_FOPI01_VARGAS_MOD1_QUIZ.Pages.PersonAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CPE106_FOPI01_VARGAS_MOD1_QUIZ.Pages"
+       mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="Page1" Background="#FFF2F7E8">
+
+
+    <!--Person Menu, Add Tab-->
+    <Grid Grid.Column="1" Margin="30 20 20 20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <!--Page Title-->
+        <TextBlock Text="Person Menu" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0 20 0 0" Foreground="#121518" HorizontalAlignment="Left"/>
+        <Separator Height="1" Grid.Row="3" Background="#DAE2EA" Margin="0 -1 0 10"/>
+
+        <!--Tab Buttons-->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0 10 0 0">
+            <Button Style="{StaticResource tabButton}" Content="Add" BorderBrush="#003573" Click="PersonAddTab_Click"/>
+            <Button Style="{StaticResource tabButton}" Content="Edit" Click="PersonEditTab_Click"/>
+            <Button Style="{StaticResource tabButton}" Content="Delete" Click="PersonDeleteTab_Click"/>
+        </StackPanel>
+
+        <!--Tab Body-->
+        <StackPanel Grid.Row="5" Margin="0 5 0 0">
+
+            <!--Tab Title-->
+            <TextBlock Text="Add a person" Grid.Row="4" FontSize="18" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 0 0 20"/>
+
+            <!--Text Boxes-->
+            <Label Grid.Row="6" Content="Last Name" Padding="0 0 0 3" Margin="0 0 200 0"/>
+            <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="10" Margin="0 0 200 0">
+                <TextBox x:Name="LastNameTextBox" Text="" Grid.Row="0" Margin="0 0 0 0" Padding="5" Background="Transparent" BorderThickness="0"/>
+            </Border>
+
+            <Label Grid.Row="7" Content="First Name" Padding="0 10 0 3" Margin="0 0 200 0"/>
+            <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="10" Margin="0 0 200 0">
+                <TextBox x:Name="FirstNameTextBox" Text="" Grid.Row="1" Margin="0 0 0 0" Padding="5" Background="Transparent" BorderThickness="0"/>
+            </Border>
+
+            <Label Grid.Row="8" Content="Middle Name" Padding="0 10 0 3" Margin="0 0 200 0"/>
+            <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="10" Margin="0 0 200 0">
+                <TextBox x:Name="MiddleNameTextBox" Text="" Grid.Row="2" Margin="0 0 0 0" Padding="5" Background="Transparent" BorderThickness="0"/>
+            </Border>
+
+            <!--Add Button-->
+            <StackPanel Grid.Row="9" Background="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 20 200 0">
+                <Button Style="{StaticResource RoundedButtonStyle2}" Content="Add" FontSize="12" Foreground="White"  Width="98" Height="38" FontFamily="./#Font Awesome 6 Free Solid" Click="PersonAddButton_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+
+</Page>
