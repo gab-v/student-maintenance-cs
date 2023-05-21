@@ -13,3 +13,6 @@ DESCRIPTION: This is a WPF app written in C# that uses a .txt file database
 INSTRUCTOR: Engr. Marvin Lee
 
 HOW TO USE: Open the C# Project File using Visual Studio and run or locate the executable file in bin\Debug\net6.0-windows.
+
+NOTE: This project utilizes the NavButton code from [WPF-Sidebar-Navigation](https://github.com/TacticDevGit/WPF-Sidebar-Navigation/tree/main) 
+by [TacticDevGit](https://github.com/TacticDevGit). 
